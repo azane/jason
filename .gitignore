@@ -1,0 +1,4 @@
+#the hidden indexer thing on macs
+.DS_Store
+#a folder that can be used for local library tests.
+local_tests/
