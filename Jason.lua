@@ -4,6 +4,11 @@
 			in addition to linking the 'body' to the 'mind'. it gets the nearest food to jason,
 			and sends that information to the neural network 'brain', and then applies the output to jason's velocity.
 	
+	NOTE 20160520: the collision detection and food sensing in this file both have O(s*j), where s are #soylents, and j are #jasons.
+					this is obviously rubbish, so if I were to do it again AND the cost of poor performance outwieghed the cost of implementation,
+					I would use fortunes algorithm to sweep the soylents and update a developing voronoi diagram with the soylents as the sites.
+					see the readme for more details
+	
 	Written by: Andrew Eric Zane
 	License: MIT License, see LICENSE file in this repo.
 --]]
